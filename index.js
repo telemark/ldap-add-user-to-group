@@ -9,7 +9,7 @@ module.exports = (opts, callback) => {
   const options = Object.assign(stdOpts, opts)
   ldapAdd(options, (err, data) => {
     if (err) {
-      return callback(null, err)
+      return callback(err, null)
     } else {
       return callback(null, data)
     }
