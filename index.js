@@ -6,7 +6,7 @@ const ldapAdd = require('./lib/ldapAdd')
 let stdOpts = config
 
 module.exports = (opts, callback) => {
-  options = Object.assign(stdOpts, opts)
+  const options = Object.assign(stdOpts, opts)
   ldapAdd(options, (err, data) => {
     if (err) {
       return callback(null, err)
