@@ -3,9 +3,10 @@
 const config = require('./config')
 const ldapAdd = require('./lib/ldapAdd')
 
-let options = config
+let stdOpts = config
 
-module.exports = (options, callback) => {
+module.exports = (opts, callback) => {
+  options = Object.assign(stdOpts, opts)
   ldapAdd(options, (err, data) => {
     if (err) {
       return callback(null, err)
