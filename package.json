@@ -1,0 +1,44 @@
+{
+  "name": "ldap-add-user-to-group",
+  "description": "Adds user to group in LDAP",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Jonas Enge",
+    "email": "jonas.enge@gmail.com",
+    "url": "https://github.com/maccyber"
+  },
+  "keywords": [
+    "ldap",
+    "group",
+    "tfk",
+    "Telemark fylkeskommune"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/telemark/ldap-add-user-to-group.git"
+  },
+  "bugs": {
+    "url": "http://github.com/telemark/ldap-add-user-to-group/issues"
+  },
+  "homepage": "https://github.com/telemark/ldap-add-user-to-group",
+  "engines": {
+    "node": ">=4.4.7"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && nsp check && tap --reporter=spec test/*.js",
+    "coverage": "tap test/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
+    "setup": "npm install"
+  },
+  "devDependencies": {
+    "coveralls": "2.11.14",
+    "nsp": "2.6.2",
+    "standard": "8.3.0",
+    "tap": "7.1.2"
+  },
+  "dependencies": {
+    "ldapjs": "1.0.0"
+  }
+}
