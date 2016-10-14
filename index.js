@@ -4,7 +4,6 @@ const config = require('./config')
 const ldapAdd = require('./lib/ldapAdd')
 
 let options = config
-options.user = 'engj'
 
 module.exports = (options, callback) => {
   ldapAdd(options, (err, data) => {
