@@ -33,7 +33,7 @@
     "setup": "npm install"
   },
   "devDependencies": {
-    "coveralls": "2.11.14",
+    "coveralls": "2.13.3",
     "nsp": "2.6.2",
     "standard": "8.3.0",
     "tap": "7.1.2"
