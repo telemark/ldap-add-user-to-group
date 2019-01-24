@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/telemark/ldap-add-user-to-group",
   "engines": {
-    "node": ">=4.4.7"
+    "node": ">=8.15.0"
   },
   "main": "index.js",
   "scripts": {
