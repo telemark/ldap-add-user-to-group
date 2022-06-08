@@ -37,6 +37,6 @@
     "tap": "16.2.0"
   },
   "dependencies": {
-    "ldapjs": "1.0.2"
+    "ldapjs": "2.3.3"
   }
 }
